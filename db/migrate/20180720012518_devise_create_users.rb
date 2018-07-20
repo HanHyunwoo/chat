@@ -3,9 +3,9 @@
 class DeviseCreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
-      ## Database authenticatable
-      t.string :email,              null: false, default: ""
-      t.string :encrypted_password, null: false, default: ""
+      ## Database authenticatable  
+      t.string :email,              null: false, default: ""   # null: false, 반드시 필요한 경우 만든다는거임 
+      t.string :encrypted_password, null: false, default: "" 
 
       ## Recoverable
       t.string   :reset_password_token
